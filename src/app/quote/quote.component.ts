@@ -7,13 +7,12 @@ import {Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes = [
-    new Quote(1,'Watch Finding Nemo','Consolee','description',0 , 0),
-    new Quote(2,'Buy Cookies','Consolee','description',0 , 0),
-    new Quote(3, 'Get new Phone Case','Consolee','description',0 , 0),
-    new Quote(4, 'Get Dog Food','Consolee','description',0 , 0),
-    new Quote(5, 'Solve math homework','Consolee','description',0 , 0),
-    new Quote(6, 'Plot my world domination plan','Consolee','description',0 , 0),
-
+    new Quote(1,'.Do not worry about failures, worry about the chances you miss when you do not even try.','Consolee','description',0 , 0),
+    new Quote(2,'.There is no security on the Earth, there is only opportunity.','Consolee','description',0 , 0),
+    new Quote(3,'.Once you replace negative thoughts with positive ones, you will start having positive results.','Consolee','description',0 , 0),
+    new Quote(4,'.Nothing works better than just improving your product.','Consolee','description',0 , 0),
+    new Quote(5,'.Build your own dreams, or someone else will hire you to build theirs.','Consolee','description',0 , 0),
+  
   ]
 
   toogleDetails(index){

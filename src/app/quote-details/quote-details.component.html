@@ -1,7 +1,5 @@
 <!-- <p>
   quote-details works!
 </p> -->
-<p>{{quote.description}}</p>
-<button (click) = 'goalComplete(true)'> Complete </button>
-<p>This goal will be completed in {{goal.completeDate|dateCount}} days</p>
-<button (click) = 'goalDelete(true)'> Delete Goal </button>
+<button class="btn btn-danger" (click) = 'quoteDelete(true)'> Delete </button>
+<button (click) = 'quoteComplete(true)'> Complete </button>

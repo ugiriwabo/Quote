@@ -2,13 +2,17 @@
   quote works!
 </p> -->
 <div class="container">
+    <div class="row">
+        <app-quote-form></app-quote-form>
+    </div>
   <div class="row" *ngFor="let quote  of quotes ;let i = 'index'">
     <div class="row">
-      <h4 id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h4> 
+      <h4 id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h4><br> 
       <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
     </div>
     <div class="row" *ngIf="quote.showDescription">
       <app-quote-details *ngIf="quote.showDescription"[quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
     </div>
   </div>
+  
 </div>
