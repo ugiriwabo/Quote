@@ -7,7 +7,7 @@
   <div  *ngFor="let quote  of quotes ; let i = 'index'" id="name">
 
     <div id="name">
-      <h4 id="{{i}}" appStrikethrough ><i>{{quote.name}}  {{quote.completeDate|date|uppercase}}</i></h4> 
+      <h4 id="{{i}}" appStrikethrough ><i><strong>{{quote.name}}  {{quote.completeDate|date|uppercase}}</strong> </i></h4> 
       <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
     </div>
 
