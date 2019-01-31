@@ -11,7 +11,7 @@
       <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
     </div>
 
-    <div *ngIf="quote.showDescription" >
+    <div *ngIf="quote.showDescription" id="quote" >
       <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
     </div>
     
