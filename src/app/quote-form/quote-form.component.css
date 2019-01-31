@@ -1,8 +1,10 @@
-
 .container-fluid{
     background-color: gray;
-    background: cover;
-    padding: 70px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 220px;
+    margin-bottom: 50px;
+}
+#form{
+    margin-left: 220px; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
 }
